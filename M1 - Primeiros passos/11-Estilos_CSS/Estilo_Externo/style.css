@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    background-color: #c7cb83;
+    font-family: Arial, sans-serif;
+    color: #b21919;
+    margin: 20px;
+}
+
+h1 {
+    color: #224e7e;
+}
+
+h2 {
+    color: #28A745;
+}
+
+h3 {
+    color: #DC3545;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration:solid underline;
+    color: #000000;
+    font-weight: bold;
+}

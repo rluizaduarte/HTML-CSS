@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Estilos</title>
+        <style>
+            body {
+                background-color: lightsteelblue;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Estudando as formas de estilizar elementos</h1>
+        <hr>
+        <h2>Estilos em linha</h2>
+        <p>O estilo em linha é aplicado diretamente a tag no elemento HTML. Na mesma abertura de tag, podemos usar o atributo "style" para definir estilos específicos.</p>
+        <p style="color: red; font-size: 30px;">Este parágrafo tem um estilo em linha, com texto vermelho e tamanho de fonte 30px.</p>
+        <p>Essa abordagem tem duas principais <strong>desvantagens</strong>:</p>
+        <ul>
+            <li><strong>Poluição do códigoo</strong>: cada elemento (tag) precisaria ter seu próprio estilo em linha.</li>
+            <li><strong>Dificuldade de manutenção</strong>: se for necessário alterar um estilo, seria preciso modificar cada elemento individualmente, o que pode ser trabalhoso e propenso a erros.</li>
+        </ul>
+        <p>O ideal é que os estilos fiquem separados do conteúdo HTML.</p>
+        <h2>Estilos internos</h2>
+        <p>Os estilos internos são definidos dentro da própria página HTML, usando a tag "style" dentro do elemento "head".</p>
+        <p>Esse style servirá para aplicar estilos a todos os elementos da página em que ela for escrita. Ela não aplica a outros arquivos.</p>
+        <p>Essa abordagem tem duas principais <strong>desvantagens</strong>:</p>
+        <ul>
+            <li><strong>Estilos com mais linhas</strong>: geralmente os estilos consomem mais espaço no código, o que pode dificultar a leitura e a manutenção.</li>
+            <li><strong>Reutilização limitada</strong>: os estilos internos só se aplicam à página em que estão escritos, o que dificulta a reutilização em outras páginas do site.</li>
+        </ul>
+        <h2>Estilos externos</h2>
+        <p>Os estilos externos são definidos em arquivos separados, com a extensão .css, e são vinculados à página HTML usando a tag "link" dentro do elemento "head".</p>
+        <p>Essa abordagem permite que os estilos sejam reutilizados em várias páginas do site, facilitando a manutenção e a consistência visual.</p>
+        <p>Aplicaremos esse arquivo externo na próxima página.</p>
+        <a href="Estilo_Externo/pagina2.html">Próxima página</a>
+    </body>
+</html>
