@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formatação</title>
+        <style>
+            mark {
+                background-color: rgb(165, 245, 165);
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Estudando formatação em HTML</h1>
+        <hr>
+        <h2>O conceito de semântica</h2>
+        <p>Semântica é o estudo do significado das palavras e expressões em um idioma. Em HTML, a semântica se refere ao uso de tags que descrevem o conteúdo de uma página de forma clara e significativa.</p>
+        <p>O HTML5 é conhecido por sua abordagem mais semântica. O objetivo aqui é que a preocupação do desenvolvedor seja com o significado do conteúdo, e não com sua apresentação visual (ainda).</p>
+        <h2>Hierarquia de títulos</h2>
+        <p>Em HTML, as tags de título H1, H2, ..., H6 não servem apenas pra definir o tamanho do texto, até porque isso já não é mais semântico, mas para estruturar o conteúdo de forma lógica e significativa.</p>
+        <p>O H1 é o título mais importante, e deve ser usado para o título principal da página. O H2 é usado para subtítulos, e assim por diante, até o H6, que é o título menos importante.</p>
+        <h2>Negrito</h2>
+        <p>Para aplicar <b>negrito</b> em um texto, utilizamos a tag b. A tag b é uma tag de formatação que não possuem significado semântico.</p>
+        <p>Já nesta frase, onde há um <strong>termo de destaque</strong>, o uso da tag strong é recomendado. Aqui o significado semântico é mais importante que a apresentação visual.</p>
+        <h2>Itálico</h2>
+        <p>Para aplicar <i>itálico</i> em um texto, utilizamos a tag i.A tag i é uma tag de formatação que não possui significado semântico</p>
+        <p>Já nesta frase, onde há um <em>termo de ênfase</em>, o uso da tag em é recomendado. Aqui o significado semântico é mais importante que a apresentação visual.</p>
+        <h2>Texto marcado</h2>
+        <p>Usa-se a tag mark para destacar um texto, como se fosse um marca texto mesmo. O uso da tag mark é recomendado quando queremos <mark>destacar um trecho específico</mark> de um texto, como uma palavra-chave ou uma informação importante.</p>
+        <p>Pra trocar a cor do fundo da marcação, já é necessário usar as CSS. Basicamente, na abertura da tag mark, podemos definir a cor do fundo (com background-color) e a cor do texto (com color). <mark style="background-color: thistle; color: white;" >Essa configuração servirá somente para esse mark.</mark></p>
+        <p>Pra configurar o mark padrão (que servirá pra todos os outros que não tiver especificação na abertura da tag), o style estará presente no head do documento.</p>
+        <h2>Tamanho dos textos</h2>
+        <p>Apesar de já ter caído em desuso, a tag <big>big</big> do html era utilizada com o propósitos de aumentar o tamanho do texto. No entanto, se entendeu que essa abordagem não era mais semântica, pois letras maiores não possuem significado.</p>
+        <p>Ao contrario da tag <small>small</small>, que possui o significado semântico de indicar texto menor, como notas de rodapé, legenda, copyright.</p>
+        <p>De modo geral, essas duas funções agora são atribuidas às CSS.</p>
+        <h2>Texto deletado</h2>
+        <p>Para aplicar <del>deletado</del> em um texto, utilizamos a tag del. A tag del é uma tag de formatação que não possui significado semântico.</p>
+        <p>Já nesta frase, onde há um <s>termo riscado</s>, o uso da tag s é recomendado. Aqui o significado semântico é mais importante que a apresentação visual.</p>
+        <h2>Texto sublinhado</h2>
+        <p>Para aplicar <u>sublinhado</u> em um texto, utilizamos a tag u. A tag u é uma tag de formatação que não possui significado semântico.</p>
+        <p>Já nesta frase, onde há um <ins>termo sublinhado</ins>, o uso da tag ins é recomendado. Aqui o significado semântico é mais importante que a apresentação visual.</p>
+        <h2>Texto sobrescrito</h2>
+        <p>Para representar um <sup>texto sobrescrito</sup>, utilizamos a tag sup. Ela é particularmente útil para indicar expoentes em fórmulas matemáticas.</p>
+        <h2>Texto subescrito</h2>
+        <p>Para representar um <sub>texto subescrito</sub>, utilizamos a tag sub. Ela é particularmente útil para indicar índices em fórmulas matemáticas.</p>
+    </body>
+</html>
