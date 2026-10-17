@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mídias</title>
+    </head>
+    <body>
+        <h1>Estudando Mídias em HTML</h1> 
+        <hr>
+        <h2>Imagens Dinâmicas</h2>
+        <p>Para configurar a imagem que iremos colocar, utilizaremos a tag &lt;picture&gt;. Essa tag pode receber como parâmetro diferentes fontes de imagem, permitindo que o navegador escolha a mais adequada. Ainda dentro dela, podemos usar o source.Essa tag permite especificar múltiplas fontes para a mesma imagem, possibilitando uma melhor otimização para diferentes dispositivos e resoluções.</p>
+        <picture>
+            <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+            <img src="Imagens/foto-g.png" alt="P">
+        </picture>
+        <p>A tag source media type recebe o atributo media, que especifica a condição sob a qual a imagem associada deve ser exibida. Se o navegador atender a condição, a imagem será exibida, se não, a imagem padrão será exibida.</p>
+        <h2>Áudios</h2>
+        <p>Pra reproduzir áudio da forma mais simples é só usar a tag audio e passar o caminho do arquivo de áudio como atributo src. Isso por si só não abre o audio assim que abre o site. Pra fazer isso, tem que passar o atributo controls e o autoplay junto. E se quiser que a musica fique em loop, pode usar o atributo loop.</p>
+        <audio src="audio.mp3" controls autoplay loop></audio>
+        <p>Outra forma de reproduzir áudio é usando a tag &lt;audio&gt; com o atributo &lt;source&gt; para especificar múltiplas fontes de áudio.</p>
+        <p>Por ordem, o site tenta rodar os sources.</p>
+        <h2>Vídeos</h2>
+        <h3>Em hospedagem própria</h3>
+        <p>Assim como imagens e audio, é simples colocar vídeos no site usando a tag &lt;video&gt;. A tag video tem os mesmos atributos do audio, como controls, autoplay e loop. E também tem a tag source para especificar múltiplas fontes de vídeo.</p>
+        <video src="video.mp4" controls autoplay loop></video>
+        <p>Especificar multiplas fontes de video com o source é importante porque o site pode ser carregado em diferentes navegadores e dispositivos.</p>
+        <p>No caso a cima o autoplay e o loop estão ativados, mas caso não esteja e queira colocar uma imagem padrão, pode usar o atributo poster.</p>
+        <video src="video.mp4" controls poster="thumb.png"></video>
+        <h3>Em hospedagem externa</h3>
+        <p>Também é possível colocar vídeos hospedados em plataformas externas, como o YouTube. Para isso, podemos usar a tag &lt;iframe&gt; para incorporar o vídeo diretamente na página.</p>
+        <p>Isso ajuda a diminuir o tamanho do site e a melhorar o desempenho.</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fOAIrUZbOwo?si=8afueWoXit1QRV_k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <p>Lá no próprio YouTube, ao selecionar a opção compartilhar no vídeo, é possível obter o código de incorporação.</p>
+    </body>
+</html>
