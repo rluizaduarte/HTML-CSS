@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Listas</title>
+    </head>
+    <body>
+        <h1>Estudando as Listas</h1>
+        <hr>
+        <p>Existem 3 tipos de listas: ordenada, não ordenada e de definição.</p>
+        <h2>Listas Ordenadas</h2>
+        <p>As listas ordenadas são utilizadas quando a ordem dos itens é importante. Cada item é numerado automaticamente. Pra isso usamos a tag ol (ordered list) e a tag li (list item).</p>
+        <ol>
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ol>
+        <p>A tag já quebra as linhas e adiciona margens ao redor do conteúdo. Posso mudar a formatação da lista usando estilos CSS com o parâmetro type.</p> <!-- 1(padrao) A a I i -->
+        <ol type="A">
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ol>
+        <ol type="a">
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ol>
+        <ol type="I">
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ol>
+        <ol type="i">
+            <li>Primeiro item</li>
+            <li>Segundo item</li>
+            <li>Terceiro item</li>
+        </ol>
+        <h2>Listas Não Ordenadas</h2>
+        <p>A sequência aqui não é importante. Cada item é marcado com um bullet. Pra isso usamos a tag ul (unordered list) e a tag li (list item).</p>
+        <ul>
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Ovos</li>
+        </ul>
+        <p>Também posso mudar a formatação da lista usando estilos CSS com o parâmetro type.</p> <!-- disc(padrao) circle square -->
+        <ul type="circle">
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Ovos</li>
+        </ul>
+        <ul type="square">
+            <li>Pão</li>
+            <li>Leite</li>
+            <li>Ovos</li>
+        </ul>
+        <h2>Lista de Definição</h2>
+        <p>Nas listas de definição, cada item é composto por um termo e sua definição. Para isso usamos a tag dl (description list), a tag dt (description term) e a tag dd (description description). É como se fosse um dicionário.</p>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Linguagem de marcação para criar páginas web.</dd>
+            <dt>CSS</dt>
+            <dd>Linguagem de estilo para definir a aparência das páginas web.</dd>
+        </dl>
+        <h2>Junção de Listas</h2>
+        <p>Posso juntar os tipos de listas. Por exemplo, uma lista ordenada com uma lista não ordenada dentro dela.</p>
+        <h3>Ul(ou Ol) dentro de Ol(ou Ul)</h3>
+        <ol>
+            <li>Segunda-feira</li>
+            <ul>
+                <li>Trabalho</li>
+                <li>Academia</li>
+            </ul>
+            <li>Terça-feira</li>
+            <ul type="circle">
+                <li>Trabalho</li>
+                <li>Festa</li>
+            </ul>
+            <li>Quarta-feira</li>
+            <ul type="square">
+                <li>Faculdade</li>
+                <li>Compras</li>
+            </ul>
+        </ol>
+        <h3>Ul(ou Ol) dentro de Ul(ou Ol)</h3>
+        <ul>
+            <li>Pesquisa</li>
+            <ul>
+                <li>PIBIC</li>
+            </ul>
+            <li>Faculdade</li>
+            <ul type="a">
+                <li>Árvores</li>
+                <li>Redes</li>
+                <li>Robótica</li>
+            </ul>
+        </ul>
+    </body>
+</html>
