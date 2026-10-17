@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mais formatações</title>
+    </head>
+    <body>
+        <h1>Estudando mais formatações</h1>
+        <hr>
+        <h2>Código-fonte</h2>
+        <p>Para representar um código-fonte, utilizamos a tag code. Ela é particularmente útil para destacar trechos de código em um texto, como em tutoriais ou documentação técnica.</p>
+        <code>console.log("Hello, World!");</code>
+        <p>No entanto, quando um comando possui mais de uma linha e queremos respeitar a indentação, utilizamos a tag pre. A tag pre preserva os espaços em branco e a formatação do texto que foram escritos dentro do próprio documento HTML.</p>
+        <pre>
+            <code>
+function saudacao() {
+    console.log("Olá, mundo!");
+}
+            </code>
+        </pre>
+        <h2>Citação</h2>
+        <h3>Citações simples</h3>
+        <p>Pra fazer uma <q>citação</q>, basta usar a tag q (quote), que adiciona aspas ao texto selecionado. São citações simples e sem quebra. </p>
+        <h3>Citações em bloco</h3>
+        <p>Já para fazer uma citação em bloco, ou seja, uma citação que ocupa um espaço separado do texto principal, utilizamos a tag blockquote. Essa tag faz uma quebra de linha e adiciona margens ao redor do conteúdo.</p>
+        <blockquote>
+            <p>O HTML é a espinha dorsal da web, permitindo que criemos páginas e aplicativos incríveis.</p>
+            — Luiza, Desenvolvedora Web
+        </blockquote>
+        <p>Ainda no bloco de citação, podemos adicionar mais detalhes ou contextos sobre a afirmação apresentada. Isso é possível com o parâmetro cite. Visualmente não há diferença para o bloco, mas internamente é importante. Como valor desse parâmetro, basta usar o URL da fonte original.</p>
+        <h2>Abreviações</h2>
+        <p>Estou estudando <abbr title="Hypertext Markup Language">HTML</abbr>. A tag usada pra abreviar é a tag abbr, que tem o parâmetro title e o texto abreviado. Quando o mouse está em cima dessa abreviação, o título é exibido.</p>
+    </body>
+</html>
