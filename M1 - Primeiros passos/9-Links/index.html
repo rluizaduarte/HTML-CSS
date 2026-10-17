@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Links</title>
+    </head>
+    <body>
+        <h1>Estudando os links</h1>
+        <hr>
+        <h2>Link Externo</h2>
+        <p>Um link externo é um link que vai apontar pra outro site, que não é esse.</p>
+        <p>A tag responsável por transformar uma parte do corpo do texto em link é a tag a (anchor).</p>
+        <p>Essa tag pede um parametro chamado href (hypertext reference). O valor desse parâmetro é a URL para onde o link vai redirecionar. Além do parâmetro, devemos fornecer o texto que será exibido como link.</p>
+        <p>Exemplo de link externo:</p>
+        <ul>
+            <li><a href="https://www.google.com">Google</a></li>
+            <li><a href="https://www.github.com">GitHub</a></li>
+            <li><a href="https://www.youtube.com">YouTube</a></li>
+        </ul>
+        <strong>É importante que a url esteja completa, com o protocolo (http:// ou https://), o sub-dominio (www), a tld (.com, .org, etc.), o caminho completo e a âncora (se houver).</strong>
+        <p>Esses links externos, no entanto, estão <b>sobrepondo</b> o site atual. Para que isso não aconteça, devemos passar outros parâmetros na tag a. O atributo target="_blank", serve para abrir o link em uma nova aba. O atributo rel="external", serve para indicar que o link é externo.</p>
+        <p>Perceba a diferença nos novos links:</p>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank" rel="external">Google</a></li>
+            <li><a href="https://www.github.com" target="_blank" rel="external">GitHub</a></li>
+            <li><a href="https://www.youtube.com" target="_blank" rel="external">YouTube</a></li>
+        </ul>
+        <h2>Link Interno</h2>
+        <p>Um link interno é um link que aponta para outra página do mesmo site.</p>
+        <h3>Novo arquivo</h3>
+        <p>Um link interno pode ser o nome de outro arquivo HTML que esteja na mesma pasta do arquivo principal (index). Como por exemplo:</p>
+        <p><a href="pagina2.html" rel="next">Página 2</a></p>
+        <p>É recomendado usar o parâmetro rel com valores "next" ou "prev" pra indicar a sequência dos links.</p>
+        <h3>Nova pasta</h3>
+        <p>Quando o arquivo estiver em uma nova pasta, devemos indicar o caminho completo:</p>
+        <p><a href="Nova_Pasta/pagina3.html" rel="next">Página 3</a></p>
+        <h2>Link para download</h2>
+        <p>Um link para download é um link que permite baixar um arquivo do servidor.</p>
+        <p>Para criar um link para download, devemos usar o atributo href com o caminho do arquivo que queremos baixar, junto com o atributo download e o atributo type com o media-type adequado.</p>
+        <p>Procure aqui o media-type adequado pra colocar como valor do atributo type:</p>
+        <ul>
+            <li><a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank">Site de assignments do media-type</a></li>
+        </ul>
+        <p>Exemplo de link para download:</p>
+        <ul>
+            <li><a href="Arquivo_Download/arquivo.jpg" download="arquivo.jpg" target="_blank" type="image/jpeg">Download do arquivo JPG</a></li>
+            <li><a href="Arquivo_Download/arquivo_zipado.zip" download="arquivo_zipado.zip" target="_blank" type="application/zip">Download do arquivo ZIP</a></li>
+        </ul>
+    </body>
+</html>
