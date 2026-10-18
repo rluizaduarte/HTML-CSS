@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo-Classes</title>
+        <style>
+            div.estado {
+                display: inline-flex;
+                text-align: center;
+                background-color: lightcyan;
+                height: 100px;
+                width: 500px;
+                border: 1px solid rgb(99, 162, 162);
+            }
+            
+            div:hover.estado {
+                background-color: lightblue;
+            }
+
+            div#d4 > p {
+                display: none;
+            }
+
+            div#d4:hover > p {
+                background-color: lightcyan;
+                border: 1px solid rgb(99, 162, 162);
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pseudo-Classes</h1>
+        <hr>
+        <h2>Estado de Elementos</h2>
+        <p>Passe o mouse por cima das divs para ver o efeito da pseudo-classe :hover.</p>
+        <div class="estado">
+            Uma pseudo-classe está relacionada a um estado específico de um elemento, como quando o mouse passa por cima dele ou quando ele é o primeiro filho de seu pai.
+        </div>
+        <div class="estado">
+            As pseudo-clases são usadas para aplicar estilos a elementos com base em seu estado ou posição na hierarquia do documento.
+        </div>
+        <div class="estado">
+            Um exemplo de pseudo-classe é a ":hover", que é aplicada a um elemento quando o mouse passa por cima dele.
+        </div>
+        <h2>Exemplo de Pseudo-Classe</h2>
+        <div id="d4">
+            Esse texto está dentro de uma div. Também existe um parágrafo escondido, o qual é filho da div, somente por estar dentro dela. Passe o mouse por cima desse texto para ver.
+            <p>Para esconder esse parágrafo, basta adicionar a propriedade "display: none;" ao estilo do elemento e adicionar display: block; quando declarar div:hover > p.</p>
+        </div>
+    </body>
+</html>
