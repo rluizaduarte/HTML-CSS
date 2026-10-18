@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fontes</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+
+            @font-face {
+                font-family: "Steven";
+                src: url(fonts/starborn/Starborn.otf), format("opentype"), url(fonts/starborn/Starborn.ttf), format("truetype");
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>Inserindo fontes novas</h1>
+        <hr>
+        <h2 style="font: normal normal 3rem Modak, system-ui;">Links</h2>
+        <p>Existem diversas ferramentas que possibilitam a inserção de fontes externas em um projeto web.A principal é a <strong>Google Fonts</strong>, onde podemos selecionar a opção "Embed" e copiar o link para o nosso projeto. Claramente essa fonte só estará disponível se o usuário tiver acesso à internet.</p>
+        <p>Então usamos a regra @import no CSS. Por exemplo:</p>
+        <pre><code>
+    @import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+        </code></pre>
+        <h2 style="font: normal normal 2rem Steven, system-ui;">Fontes baixadas</h2>
+        <p>Também é possível baixar uma fonte e inseri-la no projeto. Para isso, devemos usar a regra @font-face. Por exemplo:</p>
+        <pre><code>
+    @font-face {
+        font-family: "Minha Fonte";
+        src: url("caminho/para/a/fonte.ttf");
+    }
+        </code></pre>
+    </body>
+</html>
