@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pseudo</title>
+        <style>
+
+            /*
+            Seletores personalizados:
+                #  = id
+                .  = classe
+                :  = pseudo-classe
+                :: = pseudo-elemento
+                >  = filho direto
+            */
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: larger;
+            }
+            li > p {
+                display: none;
+            }
+            li:hover > p {
+                display: block;
+            }
+            a:hover {
+                color: red;
+            }
+            a:focus {
+                color: blue;
+            }
+            a:active {
+                color: orange;
+            }
+            code {
+                background-color: lightgray;
+                padding: 2px 4px;
+                font-size: larger;
+            }
+            li::before {
+                content: "Antes: ";
+                font-weight: bold;
+            }
+            li::after {
+                content: " :Depois";
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Pseudo</h1>
+        <hr>
+        <h2>Classes</h2>
+        <p>Já vimos que as pseudo-classes são usadas para aplicar estilos a elementos com base em seu estado ou posição na hierarquia do documento.</p>
+        <h3>Pseudo-classes estudadas</h3>
+        <ol type="A">
+            <li>:hover <p>Aplicado quando o mouse passa por cima do elemento</p></li>
+            <li>:focus <p>Aplicado quando o elemento está em foco</p></li>
+            <li>:visited <p>Aplicado quando o link foi visitado</p></li>
+            <li>:active <p>Aplicado quando o elemento está ativo</p></li>
+        </ol>
+        <h3>Aplicação das pseudo-classes estudadas</h3>
+        <p>Alguns links:</p>
+        <ul>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.github.com" target="_blank">GitHub</a></li>
+            <li><a href="https://www.stackoverflow.com" target="_blank">Stack Overflow</a></li>
+        </ul>
+        <p>A pseudo-classe A faz com que algo seja feito quando o mouse passa por cima do elemento. Portanto, aplicando:</p>
+        <pre><code>    a:hover {
+        color: red;
+    }</code></pre>
+        <p>Faz com que a cor do link fique vermelha quando o mouse passar por cima</p>
+        <p>A pseudo classe B faz com que algo seja feito quando o elemento está em foco. Portanto, aplicando:</p>
+        <pre><code>    a:focus {
+        color: blue;
+    }</code></pre>
+        <p>Faz com que a cor do link fique azul quando o elemento estiver em foco (mouse clicou nele e ainda tá aberto ou tá segurando o mouse).</p>
+        <p>A pseudo-classe C faz com que algo seja feito quando o link foi visitado. Portanto, aplicando:</p>
+        <pre><code>    a:visited {
+        color: purple;
+    }</code></pre>
+        <p>Faz com que a cor do link fique roxa quando o link foi visitado.</p>
+        <p>A pseudo-classe D faz com que algo seja feito quando o elemento está ativo. Portanto, aplicando:</p>
+        <pre><code>    a:active {
+        color: orange;
+    }</code></pre>
+        <p>Faz com que a cor do link fique laranja quando o elemento estiver ativo (mouse clicou nele e ainda tá segurando o mouse).</p>
+    <h2>Elementos</h2>
+    <p>As pseudo-elementos são usadas para criar elementos virtuais que não existem no HTML, mas que podem ser estilizados usando CSS.</p>
+    <h3>Pseudo-elementos estudados</h3>
+    <ol type="A">
+        <li>::before <p>Cria um elemento virtual antes do conteúdo do elemento selecionado</p></li>
+        <li>::after <p>Cria um elemento virtual depois do conteúdo do elemento selecionado</p></li>
+    </ol>
+    <h3>Aplicação das pseudo-elementos estudados</h3>
+    <p>Aplicando:</p>
+    <pre><code>    li::before {
+        content: "Antes: ";
+        font-weight: bold;
+    }
+    li::after {
+        content: " :Depois";
+        font-weight: bold;
+    }</code></pre>
+    <p>Faz com que o texto "Antes: " seja adicionado antes do conteúdo de cada item da lista e o texto " :Depois" seja adicionado depois do conteúdo de cada item da lista.</p>
+    </body>
+</html>
