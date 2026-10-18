@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    /*Muda a fonte de todos os elementos*/
+}
+body {
+    background-image: linear-gradient(to right, #BFBFBF, #8AA6A3);
+    /*Faz o gradiente do body*/
+}
+main {
+    border-radius: 10px;
+    /*Deixa a bordinha do main arredondada*/
+    background-color: white;
+    /*Tudo que tiver no main vai ter fundo branco*/
+    width: 50%;
+    /*Ocupa 50% da largura*/
+    padding: 15px;
+    /*Adiciona espaçamento interno*/
+    margin: auto;
+    /*Centraliza o main automaticamente pra qualquer tamanho de tela*/
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    /*Pro lado, pra baixo, espalhamento, cor*/
+    /*Adiciona uma sombra ao redor do main*/
+}
+
+h1 {
+    color: #10403B;
+    /*Muda a cor do h1*/
+}
+
+h2 {
+    color: #127369;
+    /*Muda a cor do h2*/
+}
+
+h3 {
+    color: #127369;
+    /*Muda a cor do h3*/
+}
+
+p {
+    color: #4C5958;
+    /*Muda a cor do p*/
+    text-align: justify;
+    /*Alinha o texto do p para os dois lados*/
+}
