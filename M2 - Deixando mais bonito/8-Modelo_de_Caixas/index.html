@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Caixas</title>
+        <style>
+            .exemplo {
+                background-color: lightblue;
+            }
+            #ex1 {
+                width: 50%;
+                height: 100px;
+            }
+            #ex2 {
+                padding: 20px;
+            }
+            #ex3 {
+                border: 2px solid black;
+            }
+            #ex4 {
+                margin: 50px;
+            }
+            div.exemplo {
+                width: 25%;
+                padding: 20px;
+                border: 2px solid black;
+                margin: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Caixas</h1>
+        <p>Todo o site é construído com caixas. Cada tag representa uma caixa no modelo de caixas do CSS.</p>
+        <p>O modelo de caixas é composto por quatro partes: conteúdo, preenchimento, borda e margem.</p>
+        <h2>Conteúdo</h2>
+        <p>O conteúdo é a parte central da caixa, onde o conteúdo real do elemento é exibido. Tem uma largura (width) e altura (height) específicas. Essas características definem o tamanho do conteúdo dentro da caixa e podem ser modificadas. </p>
+        <p id="ex1" class="exemplo">Este parágrafo tem uma largura de 50% e uma altura de 100px.</p>
+        <h2>Preenchimento</h2>
+        <p>O preenchimento (padding) é a área entre o conteúdo e a borda da caixa. Ele pode ser definido com valores específicos para cada lado (top, right, bottom, left).</p>
+        <p id="ex2" class="exemplo">Este parágrafo tem um preenchimento de 20px em todos os lados.</p>
+        <h2>Borda</h2>
+        <p>A borda (border) é a linha que delimita a caixa. Ela pode ser definida com valores específicos para cada lado (top, right, bottom, left).</p>
+        <p id="ex3" class="exemplo">Este parágrafo tem uma borda de 2px sólida e preta.</p>
+        <h2>Margem</h2>
+        <p>A margem (margin) é a área entre a borda da caixa e os elementos adjacentes. Ela pode ser definida com valores específicos para cada lado (top, right, bottom, left).</p>
+        <p id="ex4" class="exemplo">Este parágrafo tem uma margem de 50px em todos os lados.</p>
+        <h1>Juntando tudo</h1>
+        <p>Podemos combinar todas as partes do modelo de caixas para criar um layout mais complexo. Por exemplo:</p>
+        <div class="exemplo">
+            <p>Este é um exemplo de uma caixa completa, com conteúdo, preenchimento, borda e margem.</p>
+        </div>
+        <h1>Tipos de Caixas</h1>
+        <h2>Box-level</h2>
+        <p>As caixas de nível de bloco (block-level) ocupam toda a largura disponível e começam em uma nova linha. Exemplos incluem &lt;div&gt;, &lt;p&gt; e &lt;h1&gt;.</p>
+        <h2>Inline-level</h2>
+        <p>As caixas inline ocupam apenas o espaço necessário para o conteúdo e não começam em uma nova linha. Exemplos incluem &lt;span&gt; e &lt;a&gt;.</p>
+        <h2>Inline-block</h2>
+        <p>As caixas inline-block combinam características de ambos os tipos anteriores. Elas ocupam apenas o espaço necessário para o conteúdo, mas também permitem definir largura e altura. Exemplos incluem &lt;img&gt; e &lt;button&gt;.</p>
+    </body>
+</html>
