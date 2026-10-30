@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabelas</title>
+  <style>
+    table {
+      width: 500px;
+      height: 500px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 10px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Tabelas</h1>
+  <p>Antigamente as tabelas eram utilizadas para estruturar sites. Isso se descontinuou porque se tornava dificil a manutenção e a adição de novos componentes. Portanto, atualmente as tabelas são usadas ainda como exibição de dados, mas <strong>não</strong> como layout da página.</p>
+  <p>A tag &lt;table&gt; é utilizada para criar tabelas em HTML.</p>
+  <h2>Hierarquia simples</h2>
+  <pre><p>
+TABLE - tabela 
+  TR - table row (linha)
+    TH - table header (cabeçalho)
+    TD - table data (celula de dados)   
+  </p></pre>
+  <p>Ou seja, pra cada &lt;tr&gt; temos &lt;th&gt; ou &lt;td&gt;.</p>
+  <h2>Exemplo de tabela simples</h2>
+  <table>
+    <tr>
+      <td>Coluna A Linha 1</td>
+      <td>Coluna B Linha 1</td>
+      <td>Coluna C Linha 1</td>
+    </tr>
+    <tr>
+      <td>Coluna A Linha 2</td>
+      <td>Coluna B Linha 2</td>
+      <td>Coluna C Linha 2</td>
+    </tr>
+    <tr>
+      <td>Coluna A Linha 3</td>
+      <td>Coluna B Linha 3</td>
+      <td>Coluna C Linha 3</td>
+    </tr>
+    <tr>
+      <td>Coluna A Linha 4</td>
+      <td>Coluna B Linha 4</td>
+      <td>Coluna C Linha 4</td>
+    </tr>
+  </table>
+  <h2>Propriedade especial da borda</h2>
+  <p>Quando se utiliza a propriedade <strong>border-collapse: collapse;</strong> a borda da tabela e das células se fundem, diferentemente da configuração padrão <strong>border-collapse: separate;</strong>, que deixa um espaço entre as bordas das células.</p>
+  <h2>Alinhamento horizontal</h2>
+  <p>Usa-se <strong>text-align: center</strong>.</p>
+  <h2>Alinhamento vertical</h2>
+  <p>Usa-se <strong>vertical-align: middle</strong>.</p>
+  <h2>Mesclagem de células</h2>
+  <p>Existem duas formas de mesclar uma célula:
+    <ul>
+      <li><strong>rowspan</strong>: mescla células em linhas</li>
+      <li><strong>colspan</strong>: mescla células em colunas</li>
+    </ul>
+  Para usar uma delas, basta adicionar o atributo equivalente (se quer mesclar por linha ou por coluna) na tag &lt;td&gt; ou &lt;th&gt; que deseja mesclar. Por exemplo, se você quiser mesclar duas células em uma linha, você adicionaria <strong>rowspan="2"</strong> na célula que deseja mesclar. Se quiser mesclar duas células em uma coluna, você adicionaria <strong>colspan="2"</strong>.</p>
+  </p>
+  <h2>Exemplo de tabela com mesclagem</h2>
+    <table>
+    <tr>
+      <td rowspan="2">Coluna A Linha 1 e Linha 2</td>
+      <td colspan="2">Coluna B e Coluna C Linha 1</td>
+    </tr>
+    <tr>
+      <td>Coluna B Linha 2</td>
+      <td>Coluna C Linha 2</td>
+    </tr>
+    <tr>
+      <td>Coluna A Linha 3</td>
+      <td>Coluna B Linha 3</td>
+      <td>Coluna C Linha 3</td>
+    </tr>
+    <tr>
+      <td>Coluna A Linha 4</td>
+      <td>Coluna B Linha 4</td>
+      <td>Coluna C Linha 4</td>
+    </tr>
+  </table>
+</body>
+</html>
