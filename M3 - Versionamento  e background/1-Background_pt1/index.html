@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste de Fundo</title>
+        <style>
+            div.quadrado {
+                display: inline-block;
+                border: 1px solid palevioletred;
+                border-radius: 10px;
+                background-color: lightpink;
+                width: 500px;
+                height: 200px;
+                text-align: center;
+                color: palevioletred;
+            }
+            div#q1{
+                background-color: lightcyan;
+            }
+            div#q2{
+                background-image: linear-gradient(to bottom, white, lightpink);
+            }
+            div#q3{
+                background-image: url('../Imagens/pattern003.png');
+            }
+        </style>
+    </head>
+    <body>
+        <div class="quadrado" id="q1">
+            <h1>1.</h1>
+        </div>
+        <div class="quadrado" id="q2">
+            <h1>2.</h1>
+        </div>
+        <div class="quadrado" id="q3">
+            <h1>3.</h1>
+        </div>
+        <h1>Estudando backgrounds</h1>
+        <hr>
+        <p>Existem três formas até o momento de mudar o fundo. Aqui utilizei três divs diferentes pra cada uma dessas formas.</p>
+        <ol>
+            <li>Cor de fundo: com background-color passando uma cor</li>
+            <li>Gradiente: com background-image passando a função linear-gradiant (ou outro gradiente)</li>
+            <li>Imagem: com background-image passando a função url(caminho)</li>
+        </ol>
+    </body>
+</html>
