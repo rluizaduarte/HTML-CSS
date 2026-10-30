@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização</title>
+    <style>
+        #container1{
+            background-color: palevioletred;
+            height: 350px;
+            padding: 10px;
+            margin: 10px;
+        }
+        #container2{
+            background-color: palevioletred;
+            height: 350px;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+        }   
+        #conteudo1{
+            margin: auto;
+            background-color: lightpink;
+            height: 250px;
+            width: 300px;
+            padding: 10px;
+        }
+        #conteudo2{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: lightpink;
+            height: 250px;
+            width: 300px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section id="container1">
+        <article id="conteudo1">
+            <h4>Um alinhamento horizontal pode ser realizado com o margin auto.</h4>
+            <p>Porém é nítido que esse bloco não está centralizado verticalmente.</p>
+        </article>
+    </section>
+    <section id="container2">
+        <article id="conteudo2">
+            <h4>Com o position absollute é possível alinhar verticalmente.</h4>
+            <p>O left e o top do bloco tem que ser 50% cada e é preciso fazer uma transformação com transform: translate() passando -50%, -50%.</p>
+        </article>
+    </section>
+</body>
+</html>
