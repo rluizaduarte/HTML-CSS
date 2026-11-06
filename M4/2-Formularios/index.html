@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+</head>
+<body>
+  <h1>Criando o primeiro formulário</h1>
+  <p>Basicamente os formulários servem pra coletar dados do usuário.</p>
+  <hr>
+  <h2>Forma geral</h2>
+  <p>Todo formulário tem que estar entre as tags &lt;form&gt; e &lt;/form&gt;. Dentro de um formulário, além de vários atributos possíveis, temos os elementos de entrada, como campos de texto, botões, etc. Também é possível colocar paragrafos e etc.</p>
+  <h3>Exemplo: form + input text + input submit</h3>
+  <form>
+    <p>Nome: <input type="text" name="nome" id="nome"></p>
+    <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"> </p>
+    <p><input type="submit" value="Enviar"></p>
+  </form>
+  <h3>Exeemplo:form + input text + input password</h3>
+  <form action="" method="post">
+    <p>
+      <label for="iuser">Usuário</label>
+      <input type="text" name="user" id="iuser">
+    </p>
+    <p>
+      <label for="ipass">Senha</label>
+      <input type="password" name="pass" id="ipass">
+    </p>
+    <p>
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
+    </p>
+  </form>
+  <h3>Exeemplo:</h3>
+  <h3>Exeemplo:</h3>
+
+  <h2>Label, id e name</h2>
+  <p>O label liga a caixinha ao nome que vem antes dela. Portanto, sabe-se que toda resposta dentro da caixinha ao lado de "sobrenome" é um sobrenome.</p>
+  <p><strong>atributo for</strong>:colocar o id do input ao qual ele se relaciona</p>
+  <p>O id é mais pra JavaScript.</p>
+
+  <h2>Pra onde mandar os dados?</h2>
+  <p>Normalmente se manda pra alguma linguagem de programação. Nesse curso usa-se PHP.</p>
+  <p>Por ora esses dados estarão na URL. O "?" divide o dominio dos dados que mandei.</p>
+  <h3>Metodos</h3>
+  <ul>
+    <li><strong>GET</strong>: metodo padrão, esse que fica no link.</li>
+    <li><strong>POST</strong>: não exibe os dados na URL. os dados ficam no headers do network em inspecionar.</li>
+  </ul>
+  
+  <h2>Atributos na tag forms</h2>
+  <ul>
+    <li><strong>autocomplete</strong>: por padrão é "on", mas pode ser "off". É a sugestão de valor pra o input (valores que já coloquei antes)</li>
+    <li><strong>action</strong>: ação disparada ao clicar no botão de submit, por exemplo.</li>
+    <li><strong>method</strong>: define o metodo HTTP que ta sendo utilizado. Por padrão é GET.</li>
+  </ul>
+
+  <h2>Atributos na tag input</h2>
+  <ul>
+    <li><strong>type</strong>: define o tipo do input. Por padrão é "text".</li>
+    <li><strong>name</strong>: nome do input, que é o que vai ser enviado pro servidor.</li>
+    <li><strong>id</strong>: id do input, que é o que vai ser usado no label.</li>
+    <li><strong>value</strong>: valor do input, que é o que vai ser enviado pro servidor.</li>
+    <li><strong>placeholder</strong>: texto de sugestão dentro do input.</li>
+    <li><strong>required</strong>: define se o input é obrigatório ou não.</li>
+    <li><strong>size</strong>: define o tamanho do input.</li>
+</body>
+</html>
